@@ -1,9 +1,10 @@
 * {
-    background: #000;
+     background: linear-gradient(to right, #8b1212, #14293d);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 section {
     list-style-type: none;
     max-width: 90%;
@@ -11,20 +12,19 @@ section {
 }
 .js-photoGrid {
     columns: 3 250px;
-    gap: 5px;
+    gap:15px;
    list-style: none;
 }
 .imgContainer{
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     border-radius: 10px;
-    border: none;
+    border: 4px solid white;
     height: auto;
     break-inside: avoid;
-    margin-bottom: 5px;
-    
+    margin-bottom: 10px;
+
 }
 
 .imgContainer img {
@@ -36,4 +36,8 @@ section {
 }
 
 .imgContainer:hover {
-    transform: scale(1.1); }
+    transform: scale(1.1);
+box-shadow: 4px 3px 44px -2px rgba(0,0,0,0.99);
+-webkit-box-shadow: 4px 3px 44px -2px rgba(0,0,0,0.99);
+-moz-box-shadow: 4px 3px 44px -2px rgba(0,0,0,0.99);
+ }
